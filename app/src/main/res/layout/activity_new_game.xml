@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_statistics"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#033FF4"
+        android:text="Statistics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_turnOffHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/tonight"
+        android:text="lights"
+        android:textColor="#FFE44E"
+        android:textSize="84sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_theHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/tonight"
+        android:text="out"
+        android:textColor="#FFE44E"
+        android:textSize="84sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_turnOffHeader" />
+
+    <Button
+        android:id="@+id/btn_3x3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="3x3"
+        android:textColor="#323232"
+        app:layout_constraintBottom_toTopOf="@+id/btn_startGame"
+        app:layout_constraintEnd_toStartOf="@id/btn_5x5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_5x5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="5x5"
+        android:textColor="#323232"
+        app:layout_constraintBottom_toTopOf="@+id/btn_startGame"
+        app:layout_constraintEnd_toStartOf="@+id/btn_7x7"
+        app:layout_constraintStart_toEndOf="@+id/btn_3x3" />
+
+    <Button
+        android:id="@+id/btn_7x7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="7x7"
+        android:textColor="#323232"
+        app:layout_constraintBottom_toTopOf="@+id/btn_startGame"
+        app:layout_constraintEnd_toStartOf="@+id/btn_9x9"
+        app:layout_constraintStart_toEndOf="@+id/btn_5x5" />
+
+    <Button
+        android:id="@+id/btn_9x9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="9x9"
+        android:textColor="#323232"
+        app:layout_constraintBottom_toTopOf="@+id/btn_startGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_7x7" />
+
+    <Button
+        android:id="@+id/btn_startGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#043FF3"
+        android:text="Start Game"
+        app:layout_constraintBottom_toTopOf="@+id/btn_statistics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
